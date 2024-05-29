@@ -5,80 +5,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
 </head>
 
 <body>
-    <header class="navbar">
+    <header>
         <div class="esquerda">
             <a href="../paginaInicial.html">
-                <img src="Imagens Cabecalho/Eptram-preto.png">
+                <img src="logo-eptran.png" alt="Logo">
             </a>
         </div>
-        <div>
-            <a href="ensino.html">Atividades</a>
-        </div>
-        <div>
-            <a href="sobrenos.html">Sobre Nós</a>
-        </div>
-        <div>
-            <a href="faleConosco.html">Fale Conosco</a>
-        </div>
-        <div class="pesquisa">
-            <form action="">
-                <input type="text" placeholder="Buscar">
-                <img src="Imagens Cabecalho/pesquisa.png" alt="">
-            </form>
-        </div>
-        <div class="teste">
-            <span>Login/Cadastro</span>
-        </div>
-        <div class="log">
-            <img src="Imagens Cabecalho/login.png" class="log" alt="">
-        </div>
+        <nav class="navigation">
+            <a href="#">Atividade</a>
+            <a href="#">Sobre Nós</a>
+            <a href="#">Fale Conosco</a>
+            <button class="btnLogin-popup">Login/Cadastro</button>
+        </nav>
     </header>
-    <div class="wrapper">
+    <div class="caixa">
         <form action="">
             <h1>Cadastre-se</h1>
 
-            <div class="input-box">
-                <div class="input-field">
+            <div class="linha">
+                <div class="inputada">
                     <input type="text" placeholder="Nome Completo" required>
                     <i class='bx bxs-user'></i>
                 </div>
-                <div class="input-field">
-                    <input type="text" placeholder="Escola" required>
-                    <i class='bx bxs-school'></i>
-                </div>
-            </div>
-
-            <div class="input-box">
-                <div class="input-field">
+                <div class="inputada">
                     <input type="email" placeholder="Email" required>
                     <i class='bx bx-envelope'></i>
                 </div>
-                <div class="input-field">
+
+            </div>
+
+            <div class="linha">
+                <div class="inputada">
+                    <input type="password" placeholder="Senha" required>
+                    <i class='bx bxs-lock-alt'></i>
+                </div>
+                <div class="inputada">
                     <input type="tel" placeholder="Telefone" required>
                     <i class='bx bxs-phone'></i>
                 </div>
             </div>
 
-            <div class="input-box">
-                <div class="input-field">
-                    <input type="password" placeholder="Senha" required>
-                    <i class='bx bxs-lock-alt'></i>
+            <div class="linha">
+                <div class="inputada">
+                    <input type="text" placeholder="Escola" required>
+                    <i class='bx bxs-school'></i>
                 </div>
-                <div class="input-field">
-                    <input type="text" placeholder="CEP" required>
-                    <i class='bx bxs-edit-location'></i>
+
+                <div class="inputada">
+                    <input type="text" placeholder="Data de Nascimento" onfocus="this.type='date'" onblur="this.type='text'" required>
+                    <i class='bx bxs-calendar'></i>
                 </div>
             </div>
 
-            <div class="input-box">
-                <div class="input-field">
-                    <select  name="" >
+
+            <div class="linha">
+                <div class="inputada">
+                    <select name="">
                         <optgroup label="Séries Iniciais">
                             <option value="">1º ano</option>
                             <option value="">2º ano</option>
@@ -100,7 +88,7 @@
                     </select>
                     <i class='bx bxs-graduation'></i>
                 </div>
-                <div class="input-field">
+                <div class="inputada">
                     <select name="" id="cars">
                         <option value="">Masculino</option>
                         <option value="">Feminino</option>
@@ -108,6 +96,7 @@
                     </select>
                     <i class='bx bx-body'></i>
                 </div>
+
             </div>
             <label><input type="checkbox">Concordo com os termos de serviço</label>
 
@@ -116,13 +105,9 @@
     </div>
 
     <footer>
-        <img src="/Imagens Cabecalho/LOGO.png" alt="0">
+        <img src="/Imagens Cabecalho/Prefeitura.png" alt="0">
 
-        <p class="p1">Departamento de Trânsito</p>
-
-        <p>Secretaria de Proteção Civil e Segurança Pública</p>
-
-        <img class="img" src="/Imagens Cabecalho/Prefeitura.png" alt="">
+        <img class="img" src="logof.png" alt="">
     </footer>
 
 </body>

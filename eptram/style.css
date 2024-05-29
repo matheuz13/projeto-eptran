@@ -3,89 +3,409 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    background-color: rgb(231, 231, 231);
-
+    background: url(teste1.jpg) no-repeat;
+    background-size: cover;
+    background-position-x: 180px;
+    background-position-y: 80px;
+    flex-wrap: wrap;
+    height: 100%;
+    font-family: "Poppins", sans-serif;
 }
 
-.navbar {
-    background-color: rgb(241, 241, 241);
-    height: 75px;
+/* Header */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 100px;
+    padding: 20px, 100px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    background-color: #F2F2F2;
 }
 
-.navbar div {
-    margin-top: 20px;
-    font-size: 20px;
-    font-weight: bold;
-    cursor: pointer;
+
+.logo {
+    font-size: 2em;
+    color: black;
+    user-select: none;
+    margin-left: 60px;
+}
+
+.esquerda {
+    display: flex;
+    align-items: center;
 }
 
 .esquerda img {
-    width: 150px;
-    margin-left: -100px;
-
-    margin-top: -25px;
+    max-height: 90px;/* Ajuste a altura conforme necessário */
+    width: 180px; 
+    margin-left: 30px;
 }
 
-.pesquisa {
+.navigation a {
     position: relative;
-    width: 60px;
+    font-size: 1.1em;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
 }
 
-.pesquisa input[type="text"] {
-    width: 100px;
-    padding-right: 55px;
-    border-radius: 12px;
-    height: 20px;
-}
-
-.pesquisa img {
+.navigation a::after {
+    content: '';
     position: absolute;
-    left: 135px;
-    top: 5px;
-    height: 15px;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: black;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
 }
 
-.teste {
-    margin-right: -280px;
+
+.navigation a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
 }
 
-.log img {
-    height: 70%;
-    margin-top: -10px;
-    margin-left: 130%;
+
+.navigation a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
 }
 
-span {
+
+.navigation .btnLogin-popup {
+    margin: 30px;
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+}
+
+
+.navigation {
+    color: #162938;
+
+}
+
+.navigation .btnLogin-popup {
+    margin: 30px;
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid rgb(0, 0, 0);
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: black;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+}
+
+
+.navigation .btnLogin-popup:hover {
+    background: gray;
+    color: #fff;
+}
+
+/* Footer */
+
+
+footer {
+    position: relative;
+    bottom: 0%;
+    background-color: #023859;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+p {
+    color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
-    color: black;
-
+    padding-top: 40px;
 }
 
-a {
-    font-family: Arial, Helvetica, sans-serif;
+/* REGISTRO */
+.caixa {
+    position: relative;
+    width: 50%;
+    background-color: #39586D;
+    color: #ffffff;
+    padding: 40px 35px 55px;
+    height: 776px;
+    margin-top: 5%;
+}
+
+.caixa h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #FFF;
+    margin-top: 12%;
+}
+
+.caixa .linha {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.linha .inputada {
+    position: relative;
+    width: 50%;
+    margin: 13px 0;
+    color: #FFF;
+}
+
+.linha .inputada input,
+.linha .inputada select {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    outline: none;
+    font-size: 16px;
+    color: #FFF;
+    border-radius: 6px;
+    padding: 15px 15px 15px 40px;
+}
+
+.linha select option {
+    color: black;
+}
+
+.linha select optgroup {
+    color: black;
+}
+
+
+.linha .inputada input::placeholder {
+    color: #FFF;
+}
+
+.linha .inputada i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 15px;
+    font-size: 20px;
+}
+
+.caixa label {
+    display: inline-block;
+    font-size: 14.5px;
+    margin: 10px 0 23px;
+}
+
+.caixa label input {
+    accent-color: #FFF;
+    margin-right: 5px;
+}
+
+.caixa .btn {
+    width: 100%;
+    height: 45px;
+    background-color: #FFF;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+
+/* Login */
+
+.body2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 100vh;
+    background: url('teste4.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}  
+
+
+.p2{
+    color: black;
+}
+
+
+.wrapper{
+    position: relative;
+    width: 600px;
+    height: 580px;
+    background: #ebe2e2;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 180px;
+    margin-bottom: 106px;
+}
+
+
+.wrapper .form-box{
+    width: 100%;
+    padding: 40px;
+}
+
+.form-box{
+    font-size: 2em;
+    color: #162938;
+    text-align: center;
+}
+
+.input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #162938;
+    margin: 30px 0;
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #162938;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s;
+}
+
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: -5px;
+}
+
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: #162938;
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+}
+
+
+.input-box .icon{
+    position: absolute;
+    right: 8px;
+    font-size: 0.8em;
+    color: #162938;
+    line-height: 57px;
+}
+
+
+.remember-forgot{
+    font-size: .4cm;
+    color: #162938;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.remember-forgot label input{
+    accent-color: #162938;
+    margin-right: 3px;
+}
+
+
+.remember-forgot a {
+    color: #162938;
+    text-decoration: none;
+}
+
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+
+.bnt5 {
+    width: 100%;
+    height: 45px;
+    font-size: 25px;
+    background: #162938;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 500;
+}
+
+
+.login-register {
     font-size: 15px;
-    color: black;
-    text-decoration: none
+    color: #162938;
+    text-align: center;
+    font-weight: 500;
+    margin: 35px 0 10px;
 }
 
-a:hover {
-    color: rgb(83, 83, 83);
+
+.login-register p a {
+    color: #162938;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+.login-register p a:hover {
+    text-decoration: underline;
 }
 
 main {
     background-image: url(teste.jpg);
-    background-position-y: 30%;
+    background-position-y: 25%;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: 793px;
+    height: 868px;
     margin-top: 0px;
 }
 
@@ -108,8 +428,9 @@ main div {
 }
 
 main img {
-    width: 60%;
-    height: 50%;
+    margin-top: 14%;
+    width: 25%;
+    height: 30%;
 }
 
 .btn {
@@ -177,14 +498,6 @@ main img {
 }
 
 
-footer {
-    background-color: rgb(26, 71, 137);
-    width: 100%;
-    height: 10vh;
-    display: flex;
-    justify-content: space-between;
-}
-
 .img {
     right: 50px;
     margin-right: 30px;
@@ -196,13 +509,6 @@ footer {
     font-size: 15px;
     margin-left: 800px;
 
-}
-
-p {
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    padding-top: 40px;
 }
 
 .sobrenos {
@@ -230,137 +536,97 @@ h1 {
 
 /* FALE CONOSCO */
 
-.CaixaCentral span {
-    padding-left: 40px;
+.body3 {
+    background-color: #39586D;
+    background-image: none;
 }
 
-.titulo {
-    padding-top: 50px;
-    height: 60px;
-    width: 100%;
-
-}
-
-.titulo h1 {
-    font-size: 60px
-}
-
-.CaixaCentral {
+.fale {
     position: relative;
-    top: 5vh;
-    margin-bottom: 10vh;
-    background-color: rgb(202, 200, 200);
-    height: 660px;
-    width: 1200px;
-    margin: auto;
-    opacity: 0.920;
-    border-radius: 30px;
-}
-
-.CaixaCentral h1 {
+    width: 50%;
+    justify-content: center;
     text-align: center;
+    background-color: #39586D;
+    color: #ffffff;
+    padding: 40px 35px 55px;
+    height: 776px;
+    margin-top: 5%;
+    margin-left: 25%;
 }
 
-.RedeSocial {
-    margin: 40px;
-    justify-content: space-between;
-
-}
-
-.topo_RedeSocial {
+.fale h1 {
+    font-size: 36px;
     text-align: center;
-    display: flex;
+    margin-bottom: 20px;
+    color: #FFF;
+    margin-top: 12%;
 }
 
-.meio_RedeSocial {
-    display: flex;
-    padding-left: 30px;
+.fale label {
+    display: inline-block;
+    font-size: 14.5px;
+    margin: 10px 0 23px;
 }
 
-.baixo_RedeSocial {
-    align-items: center;
-    justify-content: center;
-    padding-left: 20px;
+.fale label input {
+    accent-color: #FFF;
+    margin-right: 5px;
 }
 
-
-.facebook {
+.fale .btn {
+    width: 100%;
+    height: 45px;
+    background-color: #FFF;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
     cursor: pointer;
-    margin: 20px;
-    display: flex;
-    font-size: 30px;
-    align-items: center;
-    justify-content: center;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
 }
 
-.facebook img {
-    display: block;
-    height: 100px;
-    width: 100px;
+.treco .inputada input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    outline: none;
+    font-size: 16px;
+    color: #FFF;
+    border-radius: 6px;
+    padding: 10px 10px 10px 30px;
 }
 
-.x {
-    cursor: pointer;
-    display: flex;
-    padding-left: 130px;
-    font-size: 30px;
-    margin: 30px;
-    align-items: center;
-    justify-content: center;
+.treco .inputada {
+    position: relative;
+    width: 100%;
+    margin: 13px 0;
+    color: #FFF;
 }
 
-.x img {
-    display: block;
-    height: 100px;
-    width: 100px;
+.treco .inputada input::placeholder{
+    color: #FFF;
+}
+.treco .inputada textarea {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    outline: none;
+    font-size: 16px;
+    color: #FFF;
+    border-radius: 6px;
+    padding: 10px 10px 10px 30px;
+    resize: none; 
+    margin-bottom: 50px;
 }
 
-.instagram {
-    cursor: pointer;
-    display: flex;
-    font-size: 30px;
-    margin: 30px;
-    align-items: center;
-    justify-content: center;
+.treco .inputada textarea::placeholder {
+    color: #FFF;
 }
-
-.instagram img {
-    display: block;
-    height: 100px;
-    width: 100px;
-}
-
-.zapp {
-    cursor: pointer;
-    display: flex;
-    padding-left: 110px;
-    font-size: 30px;
-    margin: 30px;
-    align-items: center;
-    justify-content: center;
-}
-.zapp img {
-    display: block;
-    height: 100px;
-    width: 100px;
-}
-
-.gmail {
-    cursor: pointer;
-    display: flex;
-    font-size: 30px;
-    margin: 30px;
-    align-items: center;
-    justify-content: center;
-
-}
-
-.gmail img {
-    display: block;
-    height: 100px;
-    width: 120px;
-
-}
+/* Sobrenos */
 
 .sobrenos {
     background-color: rgb(202, 200, 200);
@@ -388,7 +654,7 @@ h1 {
     font-size: 50px;
 }
 
-.img2 {
+.img3 {
     display: block;
     margin-bottom: 10px;
     margin-left: 40px;
@@ -495,35 +761,169 @@ h1{
     text-align: center;
 }
 
-/* teste */
-body .registrar {
+.conteiner {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
 }
 
-.wrapper {
-    width: 750px;
-    background-color: rgb(0, 0, 0);
-    color: #FFF;
-}
-
-.wrapper h1 {
-    font-size: 36px;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.wrapper .input-box{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    background-color: #4b4b4b;
-}
-
-.wrapper .input-field {
+/* Lateral da Página de Configuração */
+.azul{
     position: relative;
-    width: 50%;
-    background-color: salmon
+    top: 0px;
+    width: 25%;
+    height: 1000px;
+    background: rgb(26,71,137);
+    padding: 14px;
+}
+
+
+.h2{
+  margin-left: 40px;
+  margin-top: 40px;
+  color: #fff;  
+}
+
+
+.h3{
+    margin-left: 40px;
+    margin-top: 30px;
+    color: #fff;
+}
+
+
+.p2{
+ margin-left: 60px;
+  margin-top: 25px;  
+  color: #fff;
+}
+
+
+.icon {
+    margin-left: 62px;
+    font-size: 1.2em;
+    color: #fff;
+    vertical-align: middle;
+}
+
+
+.icon2 {
+    margin-left: 60px;
+    font-size: 1.2em;
+    color: #fff;
+    vertical-align: middle;
+}
+
+
+.icon3 {
+    margin-left: 24px;
+    font-size: 1.2em;
+    color: #fff;
+    vertical-align: middle;
+}
+
+
+.icon4 {
+    margin-left: 52px;
+    font-size: 1.2em;
+    color: #fff;
+    vertical-align: middle;
+}
+
+
+.icon5 {
+    margin-left: 14px;
+    font-size: 1.2em;
+    color: #fff;
+    vertical-align: middle;
+}
+/* config */
+.configTela {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+.config {
+    padding-top: 120px;
+    margin-bottom: 100px;
+    padding-right: 3px;
+    display: flex;
+}
+
+label {
+    font-size: 20px;
+    margin: 20px;
+    width: 200px;
+}
+
+
+input{
+    width: 300px;
+}
+
+select {
+    appearance: none; /* Remove estilos padrão do sistema */
+    -webkit-appearance: none; /* Para navegadores baseados em WebKit */
+    -moz-appearance: none; /* Para navegadores baseados em Mozilla */
+    background-color: #f1f1f1; /* Cor de fundo */
+    border: 1px solid #ccc; /* Borda */
+    padding: 8px 12px; /* Espaçamento interno */
+    font-size: 16px; /* Tamanho da fonte */
+    cursor: pointer; /* Cursor do mouse */
+    border-radius: 10px; /* Borda arredondada */
+    width: 200px;
+    text-align: center;
+  }
+  
+  /* Estilos quando o cursor está em cima do seletor */
+  select:hover {
+    border-color: #aaa; /* Mudança de cor da borda */
+  }
+  
+  /* Estilos quando o seletor é focado */
+  select:focus {
+    outline: none; /* Remove o contorno ao focar */
+    border-color: #1b5fdd; /* Mudança de cor da borda */
+  }
+
+.botaoPequeno {
+    font-size: 10px;
+    background-color: #1b5fdd; /* Cor de fundo */
+    border: none; /* Sem borda */
+    color: white; /* Cor do texto */
+    padding: 15px 32px; /* Espaçamento interno */
+    text-align: center; /* Alinhamento do texto */
+    text-decoration: none; /* Sem decoração de texto */
+    display: inline-block; /* Exibir como elemento em linha */
+    font-size: 16px; /* Tamanho da fonte */
+    margin: 4px 2px; /* Margem */
+    cursor: pointer; /* Cursor do mouse */
+    border-radius: 10px;
+}
+
+.botaoMedio {
+    font-size: 15px;
+    background-color: #1b5fdd; /* Cor de fundo */
+    border: none; /* Sem borda */
+    color: white; /* Cor do texto */
+    padding: 15px 32px; /* Espaçamento interno */
+    text-align: center; /* Alinhamento do texto */
+    text-decoration: none; /* Sem decoração de texto */
+    display: inline-block; /* Exibir como elemento em linha */
+    font-size: 16px; /* Tamanho da fonte */
+    margin: 4px 2px; /* Margem */
+    cursor: pointer; /* Cursor do mouse */
+    border-radius: 10px;
+}
+
+.botaoGrande{
+    font-size: 20px;
+    background-color: #1b5fdd; /* Cor de fundo */
+    border: none; /* Sem borda */
+    color: white; /* Cor do texto */
+    padding: 15px 32px; /* Espaçamento interno */
+    text-align: center; /* Alinhamento do texto */
+    text-decoration: none; /* Sem decoração de texto */
+    display: inline-block; /* Exibir como elemento em linha */
+    font-size: 16px; /* Tamanho da fonte */
+    margin: 4px 2px; /* Margem */
+    cursor: pointer; /* Cursor do mouse */
+    border-radius: 10px;
 }

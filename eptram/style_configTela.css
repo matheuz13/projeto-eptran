@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+
+.conteiner {
+    display: flex;
+}
+
+/* coisa do gordo */
+.azul{
+    position: relative;
+    top: 0px;
+    width: 25%;
+    height: 1000px;
+    background: rgb(26,71,137);
+    padding: 14px;
+}
+
+
+.h2{
+  margin-left: 40px;
+  margin-top: 40px;
+  color: #fff;  
+}
+
+
+.h3{
+    margin-left: 40px;
+    margin-top: 30px;
+    color: #fff;
+}
+
+
+.p2{
+ margin-left: 60px;
+  margin-top: 25px;  
+  color: #fff;
+}
+
+
+.icon {
+    margin-left: 62px;
+    font-size: 1.2em;
+    color: #fff;
+    vertical-align: middle;
+}
+
+
+.icon2 {
+    margin-left: 60px;
+    font-size: 1.2em;
+    color: #fff;
+    vertical-align: middle;
+}
+
+
+.icon3 {
+    margin-left: 24px;
+    font-size: 1.2em;
+    color: #fff;
+    vertical-align: middle;
+}
+
+
+.icon4 {
+    margin-left: 52px;
+    font-size: 1.2em;
+    color: #fff;
+    vertical-align: middle;
+}
+
+
+.icon5 {
+    margin-left: 14px;
+    font-size: 1.2em;
+    color: #fff;
+    vertical-align: middle;
+}
+/* config */
+.configTela {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+.config {
+    padding-top: 120px;
+    margin-bottom: 100px;
+    padding-right: 3px;
+    display: flex;
+}
+
+label {
+    font-size: 20px;
+    margin: 20px;
+    width: 200px;
+}
+
+
+input{
+    width: 300px;
+}
+
+select {
+    appearance: none; /* Remove estilos padrão do sistema */
+    -webkit-appearance: none; /* Para navegadores baseados em WebKit */
+    -moz-appearance: none; /* Para navegadores baseados em Mozilla */
+    background-color: #f1f1f1; /* Cor de fundo */
+    border: 1px solid #ccc; /* Borda */
+    padding: 8px 12px; /* Espaçamento interno */
+    font-size: 16px; /* Tamanho da fonte */
+    cursor: pointer; /* Cursor do mouse */
+    border-radius: 10px; /* Borda arredondada */
+    width: 200px;
+    text-align: center;
+  }
+  
+  /* Estilos quando o cursor está em cima do seletor */
+  select:hover {
+    border-color: #aaa; /* Mudança de cor da borda */
+  }
+  
+  /* Estilos quando o seletor é focado */
+  select:focus {
+    outline: none; /* Remove o contorno ao focar */
+    border-color: #1b5fdd; /* Mudança de cor da borda */
+  }
+
+.botaoPequeno {
+    font-size: 10px;
+    background-color: #1b5fdd; /* Cor de fundo */
+    border: none; /* Sem borda */
+    color: white; /* Cor do texto */
+    padding: 15px 32px; /* Espaçamento interno */
+    text-align: center; /* Alinhamento do texto */
+    text-decoration: none; /* Sem decoração de texto */
+    display: inline-block; /* Exibir como elemento em linha */
+    font-size: 16px; /* Tamanho da fonte */
+    margin: 4px 2px; /* Margem */
+    cursor: pointer; /* Cursor do mouse */
+    border-radius: 10px;
+}
+
+.botaoMedio {
+    font-size: 15px;
+    background-color: #1b5fdd; /* Cor de fundo */
+    border: none; /* Sem borda */
+    color: white; /* Cor do texto */
+    padding: 15px 32px; /* Espaçamento interno */
+    text-align: center; /* Alinhamento do texto */
+    text-decoration: none; /* Sem decoração de texto */
+    display: inline-block; /* Exibir como elemento em linha */
+    font-size: 16px; /* Tamanho da fonte */
+    margin: 4px 2px; /* Margem */
+    cursor: pointer; /* Cursor do mouse */
+    border-radius: 10px;
+}
+
+.botaoGrande{
+    font-size: 20px;
+    background-color: #1b5fdd; /* Cor de fundo */
+    border: none; /* Sem borda */
+    color: white; /* Cor do texto */
+    padding: 15px 32px; /* Espaçamento interno */
+    text-align: center; /* Alinhamento do texto */
+    text-decoration: none; /* Sem decoração de texto */
+    display: inline-block; /* Exibir como elemento em linha */
+    font-size: 16px; /* Tamanho da fonte */
+    margin: 4px 2px; /* Margem */
+    cursor: pointer; /* Cursor do mouse */
+    border-radius: 10px;
+}
+
+
+/*Som*/
+.direita {
+    margin-left: 50px;
+}
+.baixo {
+    margin-left: 100px;
+    display: flex;
+}
+h3 {
+    line-height: 7.5;
+    font-size: 20px;
+}
+button {
+    width: 120px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 5px 10px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #0056b3;
+}
+
+
+.som{
+    display: flex;
+}
+.lado{
+    margin-left: 20px;
+}
+select {
+    width: 130px;
+    height: 50px;
+    padding: 5px 10px;
+    border: 1px solid #007BFF;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #007BFF;
+    cursor: pointer;
+    font-size: 16px;
+}
