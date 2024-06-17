@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style_configTela.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
@@ -23,7 +22,8 @@
             <button class="btnLogin-popup">Login/Cadastro</button>
         </nav>
     </header>
-    <div class="conteiner">
+
+   <div class="conteiner">
         <div class="azul">
             <h2 class="h2">Configuração</h2>
 
@@ -43,34 +43,40 @@
             <a class="p2">Conquistas <ion-icon name="chevron-forward-outline" class="icon5"></ion-icon></a>
         </div>
 
+
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 
-        <div class="direita">
-            <h1>Acessibilidade</h1>
-            <h2>Som:</h2>
-            <div class="baixo">
-                <div>
-                    <h3>Som:</h3>
-                    <div class="som">
-                        <button><i class="fas fa-volume-mute"></i>Desligar</button>
-                        <button class="lado"><i class="fas fa-volume-up"></i> Ligar</button>
-                    </div>
-                    <h3>Música:</h3>
-                    <div class="som">
-                        <button><i class="fas fa-volume-mute"></i>Desligar</button>
-                        <button class="lado"><i class="fas fa-volume-up"></i> Ligar</button>
-                    </div>
-                    <h3>Idioma:</h3>
-                    <select>
-                        <option value="pt">Português</option>
-                        <option value="en">Inglês</option>
-                        <option value="es">Espanhol</option>
-                    </select>
-                </div>
-             
+        <div class="titulos">
+            <h1>Acessibilidade:</h1>
+            <h2>Controles:</h2>
+            <h3 class="op">Opções:</H3>
+        </div>
+        <div class="setas">
+            <h4>1.</h4>
+            <div>
+                <button class="botao-teclado">↑</button>
             </div>
+            <div>
+                <button class="botao-teclado">←</button>
+                <button class="botao-teclado">↓</button>
+                <button class="botao-teclado">→</button>
+            </div>
+        </div>
+
+
+        <div class="wasd">
+            <h4>2.</h4>
+            <div>
+                <button class="botao-teclado">W</button>
+            </div>
+            <div>
+                <button class="botao-teclado">A</button>
+                <button class="botao-teclado">S</button>
+                <button class="botao-teclado">D</button>
+            </div>
+            
         </div>
     </div>
 
@@ -79,6 +85,7 @@
     
         <img class="img" src="imagens/logof.png" alt="">
     </footer>
+    
 </body>
 
 </html>
