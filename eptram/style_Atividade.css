@@ -1,0 +1,165 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 20px, 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    background-color: #F2F2F2;
+}
+
+footer {
+    position: absolute;
+    bottom: 0%;
+    background-color: #023859;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-shrink: 0;
+    justify-content: space-between;
+}
+
+
+
+/* Página de Atividades */
+
+.container_Atividade {
+    background-image: url(../imagens/fundo.png);
+    background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size: cover;
+   height: 980px;
+   background-position-y: 85%;
+   
+   
+   
+   } 
+   
+   .cima_atividade {
+       align-items: center;
+       display: flex;
+       height: 200px;
+       background-color: #dbdbdb;
+       width: 500px;
+       border-radius: 10px;
+       opacity: 92%;
+   }
+   
+   .baixo_Atividade {
+       display: flex;
+   }
+   
+   
+   .esquerda_atividade img {
+       width: 300px;   
+   }
+   
+   .direita_atividade {
+       display:block;
+   }
+   
+   /* Título */
+   
+   .titulo_Atividade {
+       display: block;
+       background-color: white;
+       font-size: 25px;
+       width: 400px;
+       text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* sombra no texto */
+       box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* sombreamento suave */
+       border-radius: 10px;
+       padding: 20px;
+   }
+   
+   /* Trofeu */
+   
+   .trofeu_container img {
+       width: 300px;   
+   }
+   
+    #foca {
+       top: 330px;
+       left: 30px;
+       position: relative;
+       width: 350px;
+   }
+   
+   .trofeu_container {
+       display: block;
+       width: 38%;
+   }
+   
+   .img_trofeu {
+       position: absolute;
+       top: 450px ;
+       left: 280px; 
+       display: block;
+   }
+   
+   .trofeu_texto {
+       font-size: 50px;
+       position: absolute;
+       top: 510px;
+       left: 385px;
+       display: block;
+   }
+   
+   /* Blocos de Acessos das Atividades */
+   
+   .container_botao {
+   
+   }
+   
+   .texto_atividades{
+       font-size: 40px;
+       color: rgba(255, 255, 255, 0.932);
+   }
+   
+   .video_Atividade { 
+       background-color: rgb(233, 48, 48);
+       display: block;
+       align-content: center;
+       text-align: center;
+       margin:20px;
+       border-radius: 10PX;
+   
+       /* Tamanho */
+       width: 400px;
+       height: 140px;
+   }
+   
+   
+   .jogo_Atividade {
+       background-color: rgb(243, 203, 23);
+       display: block;
+       align-content: center;
+       text-align: center;
+       margin:20px;
+       border-radius: 10PX;
+   
+       /* Tamanho */
+       width: 400px;
+       height: 140px;
+   }
+   
+   .material_Atividade {
+       background-color: rgb(90, 206, 90);
+       display: block;
+       align-content: center;
+       text-align: center;
+       margin:20px;
+       border-radius: 10PX;
+   
+       /* Tamanho */
+       width: 400px;
+       height: 140px;
+   }
+   
+   
+   
+   
+   

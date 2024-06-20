@@ -15,7 +15,8 @@ body {
 
 
 /* Header */
-header {
+/* Header */
+header{
     position: fixed;
     top: 0;
     left: 0;
@@ -28,7 +29,6 @@ header {
     z-index: 99;
     background-color: #F2F2F2;
 }
-
 
 .logo {
     font-size: 2em;
@@ -43,13 +43,12 @@ header {
 }
 
 .esquerda img {
-    max-height: 90px;
-    /* Ajuste a altura conforme necessário */
-    width: 180px;
+    max-height: 90px;/* Ajuste a altura conforme necessário */
+    width: 180px; 
     margin-left: 30px;
 }
 
-.navigation a {
+.navigation .diferente {
     position: relative;
     font-size: 1.1em;
     color: black;
@@ -58,7 +57,7 @@ header {
     margin-left: 40px;
 }
 
-.navigation a::after {
+.navigation .diferente::after {
     content: '';
     position: absolute;
     left: 0;
@@ -73,17 +72,10 @@ header {
 }
 
 
-.navigation a:hover::after {
+.navigation .diferente:hover::after {
     transform-origin: left;
     transform: scaleX(1);
 }
-
-
-.navigation a:hover::after {
-    transform-origin: left;
-    transform: scaleX(1);
-}
-
 
 .navigation .btnLogin-popup {
     margin: 30px;
@@ -125,10 +117,9 @@ header {
 
 
 .navigation .btnLogin-popup:hover {
-    background: gray;
+    background: rgb(37, 36, 36);
     color: #fff;
 }
-
 /* Footer */
 
 
@@ -819,13 +810,12 @@ margin-left: 200px;
 }
 
 .titulo_opac{
-    opacity: 0.7;
     margin-top: 130px;
     width: 400px;
-    background-color: rgba(206, 203, 203, 0.445);
+    background-color: rgb(206, 203, 203);
 }
-body {
-    background-image: url('../Imagens/fundoMaterial.png'); /* Ajuste o caminho conforme necessário */
+.fundo {
+    background-image: url('../Imagens/fundoMaterial.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

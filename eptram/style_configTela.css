@@ -1,16 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
 * {
     margin: 0;
     padding: 0;
-    font-family: "Poppins", sans-serif;
+}
+
+
+
+body {
+    margin-top: 100px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
 .conteiner {
     display: flex;
-}
-
-body {
-    margin-top: 100px;
 }
 
 .body{
@@ -19,7 +23,7 @@ body {
 }
 
 /* Header */
-header {
+header{
     position: fixed;
     top: 0;
     left: 0;
@@ -31,11 +35,6 @@ header {
     align-items: center;
     z-index: 99;
     background-color: #F2F2F2;
-}
-
-
-section{
-    display: flex;
 }
 
 .logo {
@@ -51,13 +50,12 @@ section{
 }
 
 .esquerda img {
-    max-height: 90px;
-    /* Ajuste a altura conforme necessário */
-    width: 180px;
+    max-height: 90px;/* Ajuste a altura conforme necessário */
+    width: 180px; 
     margin-left: 30px;
 }
 
-.navigation a {
+.navigation .diferente {
     position: relative;
     font-size: 1.1em;
     color: black;
@@ -66,7 +64,7 @@ section{
     margin-left: 40px;
 }
 
-.navigation a::after {
+.navigation .diferente::after {
     content: '';
     position: absolute;
     left: 0;
@@ -81,17 +79,10 @@ section{
 }
 
 
-.navigation a:hover::after {
+.navigation .diferente:hover::after {
     transform-origin: left;
     transform: scaleX(1);
 }
-
-
-.navigation a:hover::after {
-    transform-origin: left;
-    transform: scaleX(1);
-}
-
 
 .navigation .btnLogin-popup {
     margin: 30px;
@@ -120,7 +111,7 @@ section{
     width: 130px;
     height: 50px;
     background: transparent;
-    border: 2px solid #393e46;
+    border: 2px solid rgb(0, 0, 0);
     outline: none;
     border-radius: 6px;
     cursor: pointer;
@@ -133,10 +124,9 @@ section{
 
 
 .navigation .btnLogin-popup:hover {
-    background: #393e46;
+    background: rgb(37, 36, 36);
     color: #fff;
 }
-
 /* Footer */
 
 
@@ -166,6 +156,7 @@ p {
     height: 741px;
     background: rgb(26, 71, 137);
     padding: 14px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
