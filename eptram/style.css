@@ -809,13 +809,9 @@ margin-left: 200px;
     font-size: 40px;
 }
 
-.titulo_opac{
-    margin-top: 130px;
-    width: 400px;
-    background-color: rgb(206, 203, 203);
-}
+
 .fundo {
-    background-image: url('../Imagens/fundoMaterial.png');
+    background-image: url('imagens/fundoMaterial.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

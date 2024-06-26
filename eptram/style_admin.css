@@ -257,7 +257,7 @@ footer {
 }
 
 
-.h1 {
+.h1_grafico {
     padding: 30px;
     width: 600px;
     height: 20px;
@@ -266,6 +266,31 @@ footer {
     top: -10px;
  }
 
+ .grafico2 {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    top: 40px;
+    flex-wrap: wrap;
+ }
+
+.graf {
+    margin-top: -50px;
+    margin-bottom: 200px;
+    margin-left: 500px;
+}
+
+ .grafico2 p {
+    margin-top: 20%;
+    font-size: 20px;
+ }
+
+
+ .imgrafico{
+    width: 500px;
+    height: 200px;
+ }
 
  .h2_1 {
     padding: 60px;
@@ -442,37 +467,6 @@ footer {
  margin-top: 60px;
 }
 
-.grafico {
-    justify-content: center;
-    width: 80%;
-    height: 100%;
-    display: flex;
-    position: relative;
-    top: 40px;
- }
-
- .grafico2 p {
-    margin-top: 20%;
-    font-size: 20px;
- }
-
-
- .imgrafico{
-    position: relative;
-    right: -60px;
-    top: 20px;
-    width: 400px;
-    height: 200px;
- }
-
-
-
-
- .grafico2 h1{
-    position: relative;
-    left: 100px;
-    top: 10px;
- }
 
 
 
